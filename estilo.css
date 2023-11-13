@@ -1,0 +1,128 @@
+@charset "utf-8"
+
+body{
+    margin: 0;
+    padding: 0;
+    color: #e6b33d;
+    font-family: sans-serif;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+h2{
+    font-weight: 80;
+    font-family: 'Times New Roman', Times, serif;
+    color:#ffffff;
+    text-shadow: 2px 1px 1px #e6b33d;
+}
+
+span{
+    color: #000000;
+    text-align: center;
+}
+
+.brown{
+    width: 100%;
+    margin: 0 auto;
+}
+
+main{
+    display: block;
+    background-color:#e6b33d;
+}
+
+.container{
+    width: 100%;
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0 15px;
+    animation: surgir 5s ease;
+    animation-timeline: view(3);
+    animation-range: cover 50% cover 50%;
+}
+
+section.modulo p{
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 1em;
+    padding-right: 38px;
+    }
+
+section.modulo h2{
+    margin-bottom: 40px;
+font-size: 40px;
+text-transform: uppercase;
+text-align: center;
+}
+
+section.modulo.content{
+padding: 20px 0;
+background: #e6b33d;
+}
+
+section.modulo.parallax{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh !important;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section.modulo.parallax h1{
+    color: #ffffff;
+    font-weight: 90;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 4em;
+    text-transform: uppercase;
+    z-index: 50;
+    text-shadow: 3px 1px 1px #000000;
+}
+
+section.modulo.parallax:after{
+content: "";
+height: 100%;
+width: 100%;
+z-index: 8;
+position: absolute;
+background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0,0,0,0) 50%, #e6b33d 100%);
+}
+
+section.modulo.parallax-1{
+    background-image: url(https://cinepop.com.br/wp-content/uploads/2021/10/colin-em-preto-e-branco.jpeg);
+}
+
+section.modulo.parallax-2{
+    background-image: url(https://www.the-sun.com/wp-content/uploads/sites/6/2021/10/NINTCHDBPICT000690461038.jpg);
+}
+
+section.modulo.parallax-3{
+    background-image: url(https://occ-0-2794-2219.1.nflxso.net/dnm/api/v6/E8vDc_W8CLv7-yMQu8KMEC7Rrr8/AAAABS9feoY30juxAGQEPnbNUD89A3C26FX0dDZY3tBdkYtwy1_RxLVcMeXHVeMspaN4WZhTuRC_vrACvEhDR9arRz9rxurHhyAl2nAR.jpg?r=22c);
+}
+
+section.modulo.parallax-4{
+    background-image: url(https://www.mktesportivo.com/wp-content/uploads/2021/11/netflix_colin.jpg);
+}
+
+footer{
+    text-align: center;
+    background-color: #e6b33d;
+}
+
+@keyframes surgir{
+    from{
+opacity: 1;
+translate: -100vw 0;
+    }
+
+    to{
+opacity: 1;
+translate: 0 0;
+    }
+}
